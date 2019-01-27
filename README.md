@@ -23,6 +23,7 @@ In this solutions for any given Date minute, second and millicond part is stripp
 e.g booking at 01/27/2019 17:45:30 will be treated as 01/27/2019 17:00:00
 
 Classes of Interest :
+
     BookingManager.java
     BookingManagerTest.java
 
