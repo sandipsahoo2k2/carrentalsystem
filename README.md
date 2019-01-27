@@ -20,7 +20,7 @@ While the solution should allow for extension to be exposed as a service, please
 
 **Solution & Assumptions**
 
-In this solutions for any given Date minute, second and millicond part is stripped before requesting any booking.
+In this solutions for any given Date minute, second and millisecond part is stripped before requesting any booking.
 e.g booking at 01/27/2019 17:45:30 will be treated as 01/27/2019 17:00:00
 
 Classes of Interest :
