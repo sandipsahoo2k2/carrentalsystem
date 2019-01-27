@@ -144,9 +144,19 @@ public class BookingManagerTest
 
         Set<Booking> bookings = manager.getBookingsByCarId(cars.get(0).getId());
         assertEquals(0, bookings.size());
+    }
 
-        newBooking = manager.createBooking(cars.get(0).getId(), refDate.getTime(), 1);
-        assertNotNull(newBooking);
+    @Test
+    public void testIfBookingIsUpdated () throws BookingException {
+        System.out.print("testIfBookingIsUpdated\n\n");
+
+        List<Car> cars = manager.getAvailableCarsByType("Wagon");
+        Calendar refDate = Calendar.getInstance();
+        Booking booking = manager.createBooking(cars.get(0).getId(), refDate.getTime(), 1);
+        assertNotNull(booking);
+
+        Booking updatedBooking = manager.updateBooking(booking.getId(), cars.get(0).getId(), refDate.getTime(), 2);
+        assertNotNull(updatedBooking);
     }
 
     /* have added defaults initialisation function here */
