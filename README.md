@@ -31,7 +31,10 @@ Classes of Interest :
     Inventory.java
     InventoryTest.java
 
-MinHeap of Cars which are least booked is used for the benifit of customers so that bookings are evenly distributed
+MinHeap of Cars which are least booked is used for the benifit of customers so that bookings are evenly distributed.
+
+Car class could have been extended beyond just one class for more types but not done just for simplicity.
+The solution is a very basic prototype runs in a single thread so thread-safety is not considered while building this!
 
 **Test**
 
