@@ -7,8 +7,11 @@ package com.sandeep.carrental;
  */
 public class App 
 {
+    static BookingManager manager ;
+    static Inventory inventory = Inventory.getInstance();
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Car rental system" );
+        manager = new BookingManager();
     }
 }

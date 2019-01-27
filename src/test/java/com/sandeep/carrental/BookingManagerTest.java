@@ -21,15 +21,13 @@ import static org.junit.Assert.assertNotNull;
 public class BookingManagerTest
 {
     static BookingManager manager ;
-    static Inventory inventory = Inventory.getInstance();
 
     @BeforeClass
     public static void initialiseBookingSystem()
     {
-        inventory = Inventory.getInstance();
         initialiseInventoryDefaults();
         System.out.println("\nTest Cases for Car rental system \n");
-        manager = new BookingManager(inventory);
+        manager = new BookingManager();
     }
 
     @Before
@@ -156,28 +154,28 @@ public class BookingManagerTest
     {
         System.out.println("\nInventory Initialising ....");
         //4 SUVs
-        inventory.addCar("SUV");
-        inventory.addCar("SUV");
-        inventory.addCar("SUV");
-        inventory.addCar("SUV");
+        Inventory.getInstance().addCar("SUV");
+        Inventory.getInstance().addCar("SUV");
+        Inventory.getInstance().addCar("SUV");
+        Inventory.getInstance().addCar("SUV");
         //5 Trucks
-        inventory.addCar("Truck");
-        inventory.addCar("Truck");
-        inventory.addCar("Truck");
-        inventory.addCar("Truck");
-        inventory.addCar("Truck");
+        Inventory.getInstance().addCar("Truck");
+        Inventory.getInstance().addCar("Truck");
+        Inventory.getInstance().addCar("Truck");
+        Inventory.getInstance().addCar("Truck");
+        Inventory.getInstance().addCar("Truck");
         //6 Sedan
-        inventory.addCar("Sedan");
-        inventory.addCar("Sedan");
-        inventory.addCar("Sedan");
-        inventory.addCar("Sedan");
-        inventory.addCar("Sedan");
-        inventory.addCar("Sedan");
+        Inventory.getInstance().addCar("Sedan");
+        Inventory.getInstance().addCar("Sedan");
+        Inventory.getInstance().addCar("Sedan");
+        Inventory.getInstance().addCar("Sedan");
+        Inventory.getInstance().addCar("Sedan");
+        Inventory.getInstance().addCar("Sedan");
         //2 Van
-        inventory.addCar("Van");
-        inventory.addCar("Van");
+        Inventory.getInstance().addCar("Van");
+        Inventory.getInstance().addCar("Van");
         //1 Wagon
-        inventory.addCar("Wagon");
+        Inventory.getInstance().addCar("Wagon");
         System.out.println("Inventory Initialised....\n");
     }
 }

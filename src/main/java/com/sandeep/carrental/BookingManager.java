@@ -14,9 +14,9 @@ public class BookingManager {
     Map<String, Booking> bookingsById = new HashMap<>();
     Inventory inventory = null;
 
-    BookingManager(Inventory aInventory)
+    BookingManager()
     {
-        inventory = aInventory;
+        inventory = Inventory.getInstance();
     }
 
     /* Core function for the given problem */
