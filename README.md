@@ -33,4 +33,6 @@ Classes of Interest :
 
 MinHeap of Cars which are least booked is used for the benifit of customers so that bookings are evenly distributed
 
-Prepared by : Sandeep Sahoo Email : sandipsahoo2k2@gmail.com
+**Test**
+    Run BookingManagerTest cases which covers all core functionality
+    Prepared by : Sandeep Sahoo Email : sandipsahoo2k2@gmail.com
