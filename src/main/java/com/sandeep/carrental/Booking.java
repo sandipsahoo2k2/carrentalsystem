@@ -83,11 +83,19 @@ public class Booking implements Comparable<Booking>{
 
     @Override
     public int compareTo(Booking o) {
-        if(endDate.before(o.startDate))
-            return -1;
-        else if(startDate.after(o.endDate))
-            return 1;
+        if(this.endDate.getTime() <= o.startDate.getTime()
+            && this.startDate.before(o.startDate))
+        {
+            return -1 ;
+        }
+        else if(this.startDate.getTime() >= o.endDate.getTime()
+                && this.endDate.after(o.endDate))
+        {
+            return 1 ;
+        }
         else
+        {
             return 0;
+        }
     }
 }
